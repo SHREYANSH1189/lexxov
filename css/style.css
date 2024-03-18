@@ -1,0 +1,1987 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #007bff; /* Define global variable */
+  --secondary-color: #ff6347; /* Define another global variable */
+  --heading-size : 30px;
+  --subHeading-size : 17px;
+  --subHeading-color : #797979FF;
+  --heading-weight : 600;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.pageContainer{
+  width: 100%;
+  position: relative;
+  background-color: #F1F1F1;
+}
+
+.logoContainer{
+
+}
+.logoContainer #logo{
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 300px;
+}
+
+.logoContainer .navBar{
+  margin-top: 10px;
+}
+
+.logoContainer #logo, .navBar{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pageContainer .landingPage{
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  background: linear-gradient(113deg, #364DC0 9.74%, #279184 92.27%);
+}
+.landingPage .navBar{
+  height: max-content;
+  padding: 10px 0;
+  display:  inline-block;
+}
+
+.landingPage .navBar .menuContainer{
+
+}
+
+.landingPage .navBar .menuContainer .menuList{
+  left: 30%;
+  margin-top: 25px;
+  list-style-type: none;
+  position: absolute;
+}
+.landingPage .navBar .menuContainer .menuList .menu{
+  display: inline-block;
+
+}
+
+.landingPage .navBar .menuContainer .menuList .menu:not(:first-child){
+  margin-left: 80px;
+}
+.landingPage .navBar .menuContainer .menuList .menu a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Outfit", serif;
+  font-weight: 500;
+}
+
+.landingPage .navBar .btn{
+  position: absolute;
+  margin-top: 25px;
+  right: 100px;
+  color: white;
+  transform: translateY(-25%);
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: "Outfit" ,  serif;
+  font-weight: 600;
+  padding:10px 60px;
+  letter-spacing: 2px;
+  width: max-content;
+  border-radius: 10px;
+}
+
+.landingPage p{
+  color: white;
+}
+.landingPage .txtContainer{
+  position: absolute;
+  text-align: center;
+
+  top: 50%;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+}
+.landingPage .txtContainer .first{
+  font-family: "Outfit", serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  letter-spacing: 7px;
+}
+.landingPage .txtContainer .second{
+  font-family: "Poppins", serif;
+  font-size: 55px;
+  margin-top: 20px;
+
+  color: white;
+  text-align: center;
+  font-weight: Bold;
+
+}
+
+.landingPage .txtContainer .third{
+  font-family: "Poppins", serif;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.88);
+  margin-top: 20px;
+
+
+}
+.landingPage img{
+  position: absolute;
+}
+.landingPage img:nth-child(1).trianle{
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  height: 100px;
+  filter: blur(6px);
+  width: 100px;
+}
+.landingPage img:nth-child(2){
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  height: 200px;
+  filter: blur(6px);
+
+  width: 200px;
+}
+img.trianle:last-of-type {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  height: 100px;
+  filter: blur(7px);
+  rotate: 50deg;
+  width: 100px;
+}
+.landingPage img:nth-child(3){
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  filter: blur(10px);
+  height: 150px;
+  width: 150px;
+}
+
+.landingPage img:nth-child(4){
+  position: absolute;
+  left: 50%;
+  filter: blur(5px);
+
+  top: 70%;
+  height: 100px;
+  width: 100px;
+}
+
+/* Define the animation for random motion */
+@keyframes randomMotion {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(16px, -16px) rotate(-10deg);
+  }
+  40% {
+    transform: translate(-8px, 24px) rotate(10deg);
+  }
+  60% {
+    transform: translate(-24px, -8px) rotate(5deg);
+  }
+  80% {
+    transform: translate(8px, 16px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* Apply the animation to the elements */
+.animated-element {
+  animation: randomMotion 20s infinite alternate;
+}
+
+/* Styling for the elements */
+.element {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+}
+
+/* Position the elements randomly */
+.element:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 2s; /* Add a delay for the first element */
+}
+
+.element:nth-child(2) {
+  top: 30%;
+  left: 70%;
+  animation-delay: 4s; /* Add a delay for the second element */
+}
+
+.element:nth-child(3) {
+  top: 70%;
+  left: 40%;
+  animation-delay: 6s; /* Add a delay for the third element */
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(20px); /* Initial position off-screen */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content.animate {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(50px); /* Initial Y offset, adjust as needed */
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px); /* Initial Y offset, adjust as needed */
+
+    opacity: 1;
+  }
+}
+
+/* Apply animation to elements */
+.animate-fade {
+  animation: fadeIn 2.5s ease forwards;
+  opacity: 0; /* Initially invisible */
+}
+
+/* Apply initial Y offset to elements */
+.offset-y {
+  transform: translateY(50px); /* Initial Y offset, adjust as needed */
+
+}
+
+.landingPage .btnContainer{
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  margin-top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.landingPage .btnContainer div{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-family: "Poppins", serif;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.landingPage .btnContainer div{
+  display: inline-block;
+
+}
+
+
+.landingPage .btnContainer .firstBtn{
+  background-color: #282828;
+  text-align: center;
+}
+
+.landingPage .btnContainer .secondBtn{
+  border: white 2px solid;
+  margin-left: 10px;
+
+}
+.speciality{
+  position: relative;
+  background-color: white;
+  padding: 50px 0px;
+
+}
+.speciality .banner{
+  text-align: center;
+}
+.speciality .listCard{
+  margin: 50px auto 0;
+  text-align: center;
+}
+.speciality .txtContainer {
+  text-align: center; /* Center text within txtContainer */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+.speciality .txtContainer p:nth-child(1){
+  font-family: "pacifico", serif;
+  font-weight: 400;
+  color: #232323;
+  font-size: 25px;
+}
+
+.speciality .txtContainer p:nth-child(1) span{
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  color: #364DC0;
+  font-size: 20px;
+}
+.speciality .listCard{
+  margin: 50px auto 0;
+  text-align: center;
+  width: fit-content;
+}
+.speciality .txtContainer p:nth-child(2){
+  font-family: "Poppins", serif;
+  color: #797979FF;
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+
+.speciality .listCard .feature {
+  left: 0;
+  display: inline-block;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+  min-width: calc(20% - 140px); /* Adjust the width of each card with the gap */
+  margin-right: 140px; /* Define the gap between the cards */
+}
+.speciality .listCard .feature:first-child {
+
+  margin-left: 100px;
+}
+
+.speciality .listCard .feature .first {
+  height: 60px;
+}
+
+.speciality .listCard .feature p:nth-child(2) {
+  color: black;
+  font-family: "Poppins", serif;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.speciality .listCard .feature p:nth-child(3) {
+  color: #797979FF;
+  font-family: "Poppins", serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+.serviceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: auto;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 50px 0px;
+  flex-direction: column;
+
+}
+
+.serviceSection .txtContainer {
+  text-align: center; /* Center text within txtContainer */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+.serviceSection .top{
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  color: #364DC0;
+  font-size: 16px;
+}
+.serviceSection .heading{
+  font-family: "Poppins", serif;
+  margin-top: 10px;
+  font-weight: var(--heading-weight);
+  font-size: var(--heading-size);
+}
+
+.serviceSection .subHeading{
+  font-family: "Poppins", serif;
+  margin-top: 7px;
+  font-size: var(--subHeading-size);
+  color: var(--subHeading-color);
+}
+
+.cardContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+}
+.cardContainer .card:not(:first-child){
+  margin-left: 10px;
+}
+.cardContainer > div {
+  border: #a1a1a1 0.8px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 10px 25px 25px;
+  flex: 1; /* Equal width for all cards */
+  max-width: 230px; /* Set a max-width for each card if needed */
+  text-align: left;
+}
+.cardContainer div img{
+  height: 40px;
+  margin-top: 10px;;
+}
+.cardContainer .card .dynamicContent{
+  margin-top: 15px;
+}
+/*.cardContainer:hover .card {*/
+/*  filter: blur(1px); !* Apply blur effect to all cards when container is hovered *!*/
+/*}*/
+
+/*.cardContainer .card:hover {*/
+/*  filter: blur(0); !* Remove blur effect from the hovered card *!*/
+/*}*/
+.cardContainer .card .dynamicContent{
+  text-align: start;
+  overflow: hidden; /* Hide overflowing content */
+  max-height: 20px; /* Set initial maximum height */
+  transition: max-height 0.5s ease;
+}
+.cardContainer .card .dynamicContent .tech {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 5px 10px;
+  font: 500 10px "Poppins", serif;
+  border: 1px #d3d3d3 solid;
+  border-radius: 10px;
+  visibility: hidden;
+  transform: translateY(100px);
+  transition: transform 0.5s ease-in;
+}
+
+.cardContainer .card:hover .dynamicContent {
+  max-height: 100px; /* Increase maximum height on hover */
+}
+
+
+.cardContainer .card:hover .dynamicContent .tech {
+  visibility: visible; /* Show on hover */
+  transform: translateY(0px); /* Move to the original position */
+  max-height: 100px; /* Increase maximum height on hover */
+
+}
+.cardContainer div .service{
+  font-family: "Outfit", serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 30px;
+}
+.cardContainer div .desc{
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  color: rgb(121, 121, 121);
+  line-break: auto;
+  font-size: 15px;
+  width: 220px;
+  margin-top: 7px;
+}
+.speciality .txtContainer p:nth-child(1).animate{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.animate {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 1.9s ease, transform 1.9s ease;
+}
+
+.rotateAnimate{
+  transform: rotate(360deg);
+}
+
+/* Add animation styles for the sliding effect */
+.service {
+  transition: background-position 0.5s ease;
+  background-position: 0 100%;
+}
+
+.service:hover {
+  cursor: pointer;
+}
+.landingPage .logoContainer {
+  display: inline-block;
+}
+
+.landingPage .logoContainer .logo {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  top: 20px;
+  left: 130px; /* Add a semicolon here */
+}
+
+.landingPage .logoContainer p {
+  font-family: "Outfit", serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  letter-spacing: 5px;
+  top: 30px;
+  left: 190px;
+}
+
+.logoContainer img.logo,
+.logoContainer p.cmpnyName {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .landingPage .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .landingPage .navBar .menuContainer .menuList {
+    left: 0;
+  }
+
+  .landingPage .navBar .btn {
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .landingPage .txtContainer {
+    text-align: center;
+  }
+
+  .landingPage .txtContainer .first {
+    font-size: 20px;
+  }
+
+  .landingPage .txtContainer .second {
+    font-size: 30px;
+  }
+
+  .landingPage .txtContainer .third {
+    font-size: 16px;
+  }
+
+  .landingPage img {
+    display: none; /* Hide unnecessary images on small screens */
+  }
+
+  .landingPage .btnContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .landingPage .btnContainer div {
+    margin-bottom: 10px;
+  }
+
+  .speciality,
+  .serviceSection {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .speciality .listCard,
+  .serviceSection .cardContainer,
+  .pricingSection .pricingCardList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.pricingSection{
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  width: auto;
+  margin: 10px auto 0;
+  border-radius: 0px;
+  background-color: #ffffff;
+  padding: 20px 20px 100px 20px;
+
+}
+.pricingSection .banner{
+}
+
+.pricingSection .top{
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  color: #364DC0;
+  font-size: 16px;
+}
+.pricingSection .banner .heading{
+  font-family: "Poppins", serif;
+  margin-top: 10px;
+  font-weight: var(--heading-weight);
+  font-size: var(--heading-size);
+}
+.pricingSection .banner .subHeading{
+  font-family: "Poppins", serif;
+  margin-top: 7px;
+  font-size: var(--subHeading-size);
+  color: var(--subHeading-color);
+}
+
+.pricingSection .pricemenu{
+  position: relative;
+  border-bottom: 1px #dcdcdc solid;
+  margin: 40px auto 0px;
+  display: inline-block; /* Set display to inline-block */
+  width: auto; /* Set width to auto */
+}
+
+.pricingSection .pricemenu li{
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+  color: #575757;
+  position: relative;
+  font-family: "Poppins", serif;
+  list-style-type: none;
+  z-index: 0;
+}
+.pricingSection .pricemenu li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px; /* Height of the border-bottom */
+  transform: translateY(1px);
+  background-color: #000000; /* Color of the border-bottom */
+  transition: width 1.5s linear; /* Transition for width change */
+}
+
+.pricingSection .pricemenu li.selected::after {
+  width: 100%; /* When selected, set width to 100% */
+}
+
+.pricingSection .pricemenu li:not(:first-child){
+  margin-left: 30px;
+}
+
+.activeElement{
+  font-size: 22px !important;
+  font-weight: 600;
+  color: black !important;
+}
+
+
+
+.pricing-cards {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-around;
+}
+.pricing-card {
+  height: auto;
+  width: 20%; /* Adjust as needed */
+  padding: 20px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing-card-template{
+  border:1px #d2d2d2 solid;
+  min-height: 400px;
+  position: relative;
+  width: 300px;
+  text-align: left;
+  border-radius: 10px;
+  animation : gravity 2s alternate infinite;
+  transform: translateY(150%);
+  transition: transform 1.5s ease;
+  padding : 10px 25px 30px 15px;
+}
+.pricing-card-template.translateCard{
+  transform: translateY(0%);
+
+}
+
+.pricing-card-template > *{
+  margin-left: 15px;
+}
+
+.pricing-card-template p:first-child{
+  margin-top: 15px;
+}
+
+.pricing-card-template p:not(:first-child){
+  margin-top: 10px;
+}
+.pricing-card-template p{
+  font-family: "Poppins", serif;
+}
+.pricing-card-template p:nth-child(1){
+  font-size: 15px;
+  font-weight: 500;
+}
+.pricing-card-template p:nth-child(2){
+  width: 250px;
+  line-break: auto;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pricing-card-template p:nth-child(3){
+  width: 250px;
+  line-break: auto;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.pricing-card-template .note{
+  width: 270px;
+  line-break: auto;
+  font-weight: 500;
+  bottom: 30px;
+  margin: 10px auto 0;
+  font-size: 12px;
+  text-align: center;
+}
+.pricing-card-template ul{
+  list-style-type: none;
+  margin-top: 25px;
+}
+.pricing-card-template .divider{
+  width: 90%;
+  margin:20px auto 0;
+  bottom: 80px;
+  height: 1px;
+  background-color: #cccccc;
+}
+.pricing-card-template  ul li{
+  font-size: 14px;
+  text-align: start;
+  font-family: "Poppins", serif;
+  list-style-type: none;
+}
+.pricing-card-template  ul li:not(:nth-child(1)){
+  margin-top: 10px;
+}
+/* Gradient overlay for the mirror effect */
+
+.pricing-card-template {
+  position: relative;
+  overflow: hidden; /* Ensure content overflow is hidden */
+}
+
+/* Animation for the glare effect */
+@keyframes glareAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-100%,-100%) rotate(45deg); /* Initial position */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(45%, 45%) rotate(45deg); /* Mid position */
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100%, 100%) rotate(45deg); /* Final position */
+  }
+}
+.pricing-card-template.premium {
+  background-color: #364DC0;
+  box-shadow: 0 5px 30px rgba(54, 77, 192, 0.5);
+  border:none;
+}
+
+.pricing-card-template.premium div{
+  background-color: white;
+}
+.pricing-card-template.premium p{
+  color: white;
+}
+.pricing-card-template.premium ul li{
+  color: white;
+}
+
+.pricing-card-template.premium .divider{
+  background-color: rgba(255, 255, 255, 0.29);
+}
+.pricing-card-template ul li svg {
+  vertical-align: middle; /* Vertically align the SVG with the text */
+  margin-right: 5px; /* Add some gap between the SVG and the text */
+}
+.pricing-card-template:hover{
+  cursor: pointer
+}
+
+  /* Glare overlay for the premium card */
+.pricing-card-template.premium::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 200%;
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  transform: rotate(-45deg);
+  animation: glareAnimation 1.5s linear infinite;
+}
+
+.portfolioSection{
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  position: relative;
+  z-index: 0;
+  background-color: #ffffff;
+  padding: 20px 20px 100px 20px;
+}
+.portfolioSection .top{
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  color: #364DC0;
+  font-size: 16px;
+}
+.portfolioSection .heading{
+  font-size: var(--heading-size);
+  margin-top: 10px;
+  font-weight: var(--heading-weight);
+}
+.portfolioSection .subHeading{
+  font-size: var(--subHeading-size);
+  color : var(--subHeading-color);
+}
+
+/*.projectOne{*/
+/*}*/
+/* .mockup{*/
+/*  position: relative;*/
+/*   margin: 20px auto 0;*/
+/*   right: 15%;*/
+/*  animation: gravity 2s infinite alternate;*/
+/*  height: 600px;*/
+
+/*}*/
+
+/*.projectOne, .projectSecond{*/
+/*  display: inline-block;*/
+/*  cursor: pointer;*/
+/*  position: relative;*/
+/*}*/
+
+/*.project{*/
+/*  position: relative;*/
+/*  width: 46vw;*/
+/*  text-align: center;*/
+/*}*/
+
+/* .appTitle{*/
+/*   font-weight: 700;*/
+/*  font-size: 30px;*/
+/*}*/
+
+/* .appDes{*/
+/*   font-size: 18px;*/
+/*   text-align: center;*/
+/*   width: 70%;*/
+/*   margin: 10px auto 0;*/
+/*   line-break: auto;*/
+/* }*/
+
+
+/*.viewBtn span:hover + img {*/
+/*  transform: rotate(45deg);*/
+/*  transition: transform 0.5s ease;*/
+/*}*/
+/*.project .btnContainer .viewBtn{*/
+/*  margin-top: 15px;*/
+/*  padding: 10px 20px;*/
+/*}*/
+/*.project .btnContainer .viewBtn span{*/
+/*  font-family: "Outfit" , serif;*/
+/*   font-size: 24px;*/
+/*   font-weight: 600;*/
+/* }*/
+/*.project .btnContainer .viewBtn span, img{*/
+/*  vertical-align:  middle;*/
+/*}*/
+/*.project .btnContainer .viewBtn img{*/
+/*  height: 15px;*/
+/*  margin-left: 5px;*/
+
+
+/*}*/
+
+
+/*@keyframes gravity {*/
+/*  0% {*/
+/*   translate: 0 0;*/
+/*  }*/
+/*  100% {*/
+/*   translate: 0 5px; !* Adjust this value to control the height of the bounce *!*/
+/*  }*/
+/*}*/
+
+/*.web{*/
+/*  margin-top: 20px;*/
+/*}*/
+
+/*.portfolioSection .web .title1{*/
+/*  margin-left: 20px;*/
+/*  font-size: 60px;*/
+/*  font-weight: 700;*/
+/*  margin-top: 70px;*/
+/*  font-family: "pacifico", serif;*/
+
+/*}*/
+
+/*.portfolioSection .web .title2{*/
+/*  font-size: 18px;*/
+/*  width:55%;*/
+/*  line-break: auto;*/
+/*  font-weight: 500;*/
+/*  margin: 10px auto 0 ;*/
+
+/*}*/
+/*.web .projectOne{*/
+/*  padding: 40px 10px;*/
+/*  border-radius: 20px;*/
+/*  position: relative;*/
+/*  background: linear-gradient(135deg, #0B4C2D, #1CD079); !* Adjust colors as needed *!*/
+/*  height: auto;*/
+/*  min-width: 35vw;*/
+/*  max-width: 45vw;*/
+/*  margin : 40px auto 0;*/
+/*}*/
+/*.web .projectOne p:first-child{*/
+/*  font-weight: 600;*/
+/*  font-size: 30px;*/
+/*  color: white;*/
+/*  letter-spacing: 0px;*/
+/*}*/
+/*.web .projectOne p:nth-child(2){*/
+/*  margin: 10px auto 0;*/
+/*  text-align: center;*/
+/*  font-weight: 300;*/
+/*  font-size: 15px;*/
+/*  color: rgba(255, 255, 255, 0.7);*/
+/*  width: 80%;*/
+/*  line-break: auto;*/
+/*}*/
+/*.web .projectOne p:first-child , .web .projectOne p:nth-child(2){*/
+/*  text-align: center;*/
+/*  font-family: "Poppins", serif;*/
+/*  z-index: 1;*/
+
+/*}*/
+
+/*.web .projectOne ,.projectTwo{*/
+/*  margin: 50px auto 0;*/
+/*  display: inline-block;*/
+/*  cursor: pointer;*/
+
+/*}*/
+/*.web .projectOne .restro{*/
+/*  height: 450px;*/
+/*  z-index: 1;*/
+
+/*}*/
+/*.web .viewBtn{*/
+/*  color: white;*/
+/*  width: fit-content;*/
+/*  margin: 0px auto 0;*/
+/*  background-color: #216746;*/
+/*  border-radius: 4px;*/
+/*  cursor: pointer;*/
+/*  padding : 10px 30px 10px 20px;*/
+/*  z-index: 1;*/
+
+/*}*/
+
+/*.web .viewBtn .eye{*/
+/*  height: 12px;*/
+/*}*/
+
+/*.web .viewBtn .txt{*/
+/*  font-family: "Poppins", serif;*/
+/*  font-weight: 400;*/
+/*  margin-left: 5px;*/
+/*  color: white;*/
+/*}*/
+/*.web .viewBtn .eye , .portfolioSection .web .txt{*/
+/*  display: inline-block;*/
+/*}*/
+/*.web .projectTwo{*/
+/*  padding: 40px 10px;*/
+/*  border-radius: 20px;*/
+/*  position: relative;*/
+/*  background: linear-gradient(135deg, #06071f, #000000); !* Adjust colors as needed *!*/
+/*  height: auto;*/
+/*  min-width: 35vw;*/
+/*  max-width: 45vw;*/
+/*  margin : 40px auto 0;*/
+/*}*/
+
+/*.web .projectTwo p:first-child{*/
+/*  font-weight: 600;*/
+/*  font-size: 30px;*/
+/*  color: white;*/
+/*  letter-spacing: 0px;*/
+/*}*/
+/*.web .projectTwo p:nth-child(2){*/
+/*  margin: 10px auto 0;*/
+/*  text-align: center;*/
+/*  font-weight: 300;*/
+/*  font-size: 15px;*/
+/*  color: rgba(255, 255, 255, 0.7);*/
+/*  width: 80%;*/
+/*  line-break: auto;*/
+/*}*/
+/*.web .projectTwo p:first-child , .web .projectOne p:nth-child(2){*/
+/*  text-align: center;*/
+/*  font-family: "Poppins", serif;*/
+/*}*/
+
+/*.web .projectTwo .riggd{*/
+/*  height: 450px;*/
+/*}*/
+
+/*.web .projectTwo .viewBtn{*/
+/*  color: white;*/
+/*  width: fit-content;*/
+/*  margin: 0px auto 0;*/
+/*  background-color: #1e1e1e;*/
+/*  border-radius: 4px;*/
+/*  cursor: pointer;*/
+/*  padding : 10px 30px 10px 20px;*/
+
+/*}*/
+
+/*.web .projectOne, .projectTwo {*/
+/*  position: relative;*/
+/*  overflow: hidden; !* Ensure content overflow is hidden *!*/
+/*}*/
+
+/*!* Animation for the glare effect *!*/
+/*@keyframes glareAnimation {*/
+/*  0% {*/
+/*    opacity: 0;*/
+/*    transform: translate(-100%,-100%) rotate(45deg); !* Initial position *!*/
+/*  }*/
+/*  50% {*/
+/*    opacity: 0.5;*/
+/*    transform: translate(45%, 45%) rotate(45deg); !* Mid position *!*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 0;*/
+/*    transform: translate(100%, 100%) rotate(45deg); !* Final position *!*/
+/*  }*/
+/*}*/
+
+
+/*.web .projectOne:hover, .projectTwo:hover{*/
+/*  cursor: pointer*/
+/*}*/
+
+/* Glare overlay for the premium card */
+
+.container {
+  width: 300px; /* Adjust as needed */
+  overflow: auto;
+  white-space: nowrap; /* Prevents languages from wrapping */
+}
+
+.language-item {
+  display: inline-block;
+  width: 100px; /* Adjust as needed */
+  margin-right: 20px; /* Adds spacing */
+}
+
+.highlight {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Poppins", serif;
+  position: relative; /* Ensure relative positioning for absolute children */
+  height: 550px;
+  z-index: 0;
+  background-color: #ffffff;
+  padding: 20px 20px 100px 20px;
+}
+
+.top {
+  margin-top: 15px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  color: #364dc0;
+  font-size: 16px;
+}
+
+.heading {
+  font-size: var(--heading-size);
+  color: black;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--heading-weight);
+}
+
+.heading span {
+  background:linear-gradient(to right , #6c33f1, #d00eb0);
+  background-clip: text;
+  font-size: var(--heading-size);
+  margin-top: 20px;
+  color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--heading-weight);
+}
+
+.subHeading {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--subHeading-size);
+  color: var(--subHeading-color);
+}
+
+.highlight .scrollBanner {
+  position: absolute; /* Position the banners absolutely */
+  margin-top: 90px;
+  display: inline-block;
+  padding: 0px 0px;
+  height: 350px;
+  overflow: hidden;
+  width: 27vw;
+
+  white-space: nowrap;
+}
+.highlight .scrollBanner,.centerBanner{
+  vertical-align: middle;
+}
+.leftBanner {
+  z-index: 1;
+
+  background: linear-gradient(to right, #1b3186, #000000);
+  border-radius: 0px 30px 30px 0px;
+  left: 0; /* Position the left banner at the left edge */
+}
+.leftBanner::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6));
+}
+.rightBanner {
+  background: linear-gradient(to left, #1b3186, #000000);
+  border-radius: 30px 0px 0px 30px;
+
+  right: 0; /* Position the right banner at the right edge */
+}
+
+.rightBanner::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  background:linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6));
+}
+.rightBanner .row:first-child{
+  margin-top: 40px;
+}
+.rightBanner .row{
+  margin-top: 30px;
+  white-space: nowrap;
+}
+.rightBanner .row .item{
+  padding: 10px 30px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  white-space: nowrap;
+  display: inline-block;
+  transform: translateX(-50px);
+
+}
+.rightBanner .row .item{
+  margin-right: 30px;
+}
+.rightBanner .row .item img{
+  height: 20px;
+}
+.rightBanner .row .item img, .techName{
+  display: inline-block;
+  font-weight: 500;
+  vertical-align: middle;
+
+}
+.rightBanner .row .item  .techName{
+  margin-left: 5px;
+}
+
+.rightBanner .row2{
+  margin-top: 30px;
+  white-space: nowrap;
+}
+.rightBanner .row2 .item{
+  padding: 10px 30px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+  border-radius: 12px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.rightBanner .row2 .item{
+  transform: translateX(-100px);
+  margin-right: 30px;
+}
+.rightBanner .row2 .item img{
+  height: 20px;
+}
+.rightBanner .row2 .item img, .techName{
+  display: inline-block;
+  font-weight: 500;
+  vertical-align: middle;
+
+}
+.rightBanner .row2 .item  .techName{
+  margin-left: 5px;
+}
+
+.rightBanner .row:nth-child(3){
+  margin-top: 30px;
+  white-space: nowrap;
+  transform: translateX(-160px);
+}
+
+.rightBanner .row:nth-child(4){
+  margin-top: 30px;
+  white-space: nowrap;
+  transform: translateX(-60px);
+}
+
+.leftBanner .row:first-child{
+  margin-top: 40px;
+}
+.leftBanner .row{
+  margin-top: 30px;
+  white-space: nowrap;
+}
+.leftBanner .row .item{
+  padding: 10px 30px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  white-space: nowrap;
+  display: inline-block;
+  transform: translateX(-50px);
+
+}
+
+
+.leftBanner .row .item{
+  margin-right: 30px;
+}
+.leftBanner .row .item img{
+  height: 20px;
+}
+.leftBanner .row .item img, .techName{
+  display: inline-block;
+  font-weight: 500;
+  vertical-align: middle;
+
+}
+.leftBanner .row .item  .techName{
+  margin-left: 5px;
+}
+
+.centerBanner{
+  position: absolute;
+  width: 40vw;
+  top:59%;
+  left: 50%;
+  transform:  translate(-50%,-50%);
+  line-break: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.centerBanner .text{
+
+}
+
+.centerBanner .text{
+  background-color: black;
+  background-clip: text;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.centerBanner .text2{
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.info {
+  width: 100vw;
+  height: 500px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+}
+.info .banner .top{
+  margin-top: 20px;
+}
+
+.info .banner .heading{
+  margin-top: 10px;
+  width: 70vw;
+}
+.info .txtContainer {
+  position: absolute;
+  top: 68%;
+  height: 50%;
+  background: #1C2F8A;
+  left: 50%;
+  border-radius: 60px;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.info .txtContainer p {
+  margin-top: 37px;
+  font-family: "Poppins", serif;
+  color: #ffffff;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.centerBanner #divider{
+  height: 2px;
+  width: 400px;
+  background-color: #000000;
+  left: 50%;
+  position: absolute;
+  transform:translateX(-50%);
+}
+
+.typing-animation {
+  font-family: "Poppins", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000; /* Cursor effect */
+  animation: typing 3s steps(30, end), blink-caret 3s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000; }
+}
+
+.txtContainer input,button{
+  display: inline-block;
+  vertical-align: center;
+}
+
+input[type="email"] {
+  position: absolute;
+  width: 60%;
+  color: white;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 10px 20px;
+  top: 50%;
+  border:none;
+  right: 370px;
+
+  border-radius: 10px;
+  font-size: 20px;
+}
+input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.txtContainer .btnGetStarted{
+  top: 50%;
+  right: 150px;
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background: #364DC0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+input[type="email"]:focus + label,
+input[type="email"]:valid + label {
+  top: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.info .banner{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+}
+.info .banner .top{
+  font-size: 18px;
+}
+
+.info .banner .heading{
+  line-break: auto;
+}
+.app{
+  position: relative;
+  margin-top:50px;
+
+}
+.app{
+  margin: auto 0;
+
+  width: 100vw;
+}
+
+.app .txt{
+  text-align: left;
+}
+.projectOne .parentWrapper{
+
+  background-color: #EA3A3A;
+
+}
+.projectTwo .parentWrapper{
+  background-color: #6456FF;
+
+}
+.projectThree .parentWrapper{
+  background-color: #379D7E;
+
+}
+.projectThree .coloum .mobileMockup{
+
+}
+.project {
+  min-height: 40vw;
+  width: 28vw;
+  padding: 0px 0px 50px 0px;
+  margin-top: 40px;
+  z-index: 1;
+  margin-right: 20px;
+  border-radius: 10px;
+  white-space: nowrap; /* Prevent wrapping of columns */
+  position: relative; /* Ensure proper positioning of ::after pseudo-element */
+}
+.project:hover{
+  cursor: pointer;
+}
+/*.project:hover::after {*/
+/*  content: "";*/
+/*  z-index: 2;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background: linear-gradient(-135deg , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));*/
+/*}*/
+
+.project{
+  border: none;
+
+}
+.parentWrapper{
+  height: 28vw;
+  width: 28vw;
+  z-index: 1;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 10px;
+  white-space: nowrap; /* Prevent wrapping of columns */
+  position: relative;
+}
+.projectOne .wrapper{
+
+  transform: translate(-250px, -50px) rotate(45deg);
+}
+.projectTwo .wrapper{
+
+  transform: translate(-250px, -50px) rotate(45deg);
+}
+
+.projectThree .wrapper{
+
+  transform: translate(-300px, -100px) rotate(45deg);
+}
+.projectOne, .projectTwo, .projectThree{
+  display: inline-block;
+}
+.project .coloum {
+
+  display: inline-block;
+  width: 230px;
+  vertical-align: top; /* Align columns to the top */
+  white-space: normal; /* Allow wrapping inside columns */
+
+}
+
+
+.project .coloum .mobileMockup {
+  margin-top: 10px;
+  max-width: 220px; /* Ensure images don't exceed column width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure images are displayed as blocks */
+}
+
+.project:hover .coloum{
+  animation:mockupAnim 4s alternate infinite ease-in-out;
+}
+@keyframes mockupAnim {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-50%);
+  }
+}
+
+/*Text For projects sections*/
+
+.project .txt{
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 90%;
+}
+
+.project .txt .appTitle{
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: left;
+  font-family: "Poppins", serif;
+}
+.project .txt .appDes{
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 10px;
+  text-align: left;
+  margin-top: 5px;
+  font-family: "Poppins", serif;
+  width: 90%;
+  line-break: auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.63), rgba(0,0,0,0)); /* Black to transparent gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the original text */
+}
+.project:hover .txt .appDes{
+  font-weight: 400;
+  font-size: 17px;
+  width: 90%;
+  margin-left: 10px;
+  text-align: left;
+  margin-top: 5px;
+  font-family: "Poppins", serif;
+  line-break: auto;
+  transition: 1s;
+  color: black; /* Hide the original text */
+}
+.app .project .viewBtn{
+  position: absolute;
+  top: 96%;
+  margin-top: 20px;
+  left: 10px;
+}
+.app .project .viewBtn span, img{
+  display: inline-block;
+}
+
+.app .project .viewBtn img{
+  height: 15px;
+  transition: 1s;
+}
+.app .project .viewBtn span{
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.project:hover .arrow{
+  rotate: 45deg;
+  transition: 0.5s;
+}
+.portfolioSection .portfolioMenu {
+  position: relative;
+  border-bottom: 1px #dcdcdc solid;
+  margin: 40px auto 0px;
+  display: inline-block;
+  width: auto;
+}
+
+.portfolioSection .portfolioMenu li {
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+  color: #575757;
+  position: relative;
+  font-family: "Poppins", serif;
+  list-style-type: none;
+  z-index: 0;
+}
+
+.portfolioSection .portfolioMenu li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #000000;
+  transition: width 1.5s linear;
+  transform: translateY(-100%); /* Change translateY value */
+}
+
+.portfolioSection .portfolioMenu li.selected::after {
+  width: 100%;
+}
+
+.portfolioSection .portfolioMenu li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.activePortfolio {
+  border-bottom: 2px black solid;
+  font-weight: 600;
+  color: black !important;
+}
+
+.headerText{
+  margin: 30px auto 0;
+}
+
+.headerText .head{
+  margin-right: 20px;
+  width: 60%;
+  line-break: auto;
+}
+.headerText .viewAllBtn{
+  font-weight: 700;
+}
+.headerText .viewAllBtn, .head{
+  text-align: left;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/*Website*/
+
+.website{
+  position: relative;
+  margin-top:50px;
+
+}
+.website{
+  margin: auto 0;
+  width: 100vw;
+}
+
+.webproject {
+  min-height: 40vw;
+  width: 28vw;
+  position: relative;
+  padding: 0px 0px 50px 0px;
+  margin-top: 40px;
+  z-index: 1;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 10px;
+  white-space: nowrap; /* Prevent wrapping of columns */
+}
+.webproject:hover{
+  cursor: pointer;
+}
+/*.project:hover::after {*/
+/*  content: "";*/
+/*  z-index: 2;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background: linear-gradient(-135deg , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));*/
+/*}*/
+
+.webproject{
+  border: none;
+
+}
+.webparentWrapper{
+  height: 28vw;
+  width: 28vw;
+  z-index: 1;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.webprojectOne .webparentWrapper{
+  background: linear-gradient(to top, #c08c8c, #ab3d3d);
+
+}
+.webprojectTwo .webparentWrapper{
+  background: linear-gradient(to top, #8ac4a4, #3b704f);
+}
+
+.webprojectThree .webparentWrapper{
+  background: linear-gradient(to top, #a782f6, #8d51b9);
+}
+
+.projectOne, .projectTwo, .projectThree{
+  display: inline-block;
+}
+.webproject .webcoloum {
+
+  display: inline-block;
+  width: 230px;
+
+}
+
+
+
+
+.webproject .webcoloum .webMockup {
+  transform: translateY(23%);
+  border-radius: 10px;
+  scale: 1.8;
+  margin: 10px auto 0;
+  max-width: 100%; /* Ensure images don't exceed column width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.webproject:hover .webcoloum{
+  animation:mockupAnimWeb 7s alternate infinite ease-in-out;
+}
+@keyframes mockupAnim {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-50%);
+  }
+}
+@keyframes mockupAnimWeb {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-120%);
+  }
+}
+
+
+/*Text For projects sections*/
+
+.webproject .txt{
+  position: absolute;
+  top: 65%;
+  left: 0;
+  text-align: left;
+  width: 90%;
+}
+.website .appTypeCont .apptype, .app .appTypeCont .apptype{
+  display: inline-block;
+}
+.txt .apptype{
+  margin-top: 30px;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-align: left;
+  background-color: #d5dbff;
+  color: #364DC0;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Poppins", serif;
+}
+
+.webproject .txt .appTitle{
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: left;
+  font-family: "Poppins", serif;
+}
+.webproject .txt .appDes{
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 10px;
+  text-align: left;
+  margin-top: 5px;
+  font-family: "Poppins", serif;
+  width: 90%;
+  line-break: auto;
+
+  color: black; /* Hide the original text */
+}
+
+.website .webproject .viewBtn{
+  position: absolute;
+  top: 94%;
+  margin-top: 20px;
+  left: 10px;
+}
+.website .webproject .viewBtn span, img{
+  display: inline-block;
+}
+
+.website .webproject .viewBtn img{
+  height: 15px;
+  transition: 1s;
+}
+
+.website .webproject:hover .viewBtn img{
+  rotate: 45deg;
+}
+.website .webproject .viewBtn span{
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+#loading-overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+#loading-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  background-color: rgba(0, 0, 0, 0.85); /* Black semi-transparent background */
+}
+
+/* Add additional styles for the rotating wolf logo if necessary */
+#loading-overlay svg {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes waveTail {
+  0% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+  50% {
+    transform: rotate(-10deg) translateX(-5px) translateY(2px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+}
+
+/* Apply animation to the tail path */
+#loading-overlay svg path:first-child,
+#loading-overlay svg path:last-child{
+  animation: waveTail 2s infinite !important;
+  transform-origin: 10% -0%; /* Adjust the value to set the hinge point */
+}
+
+#loading-overlay .content {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
